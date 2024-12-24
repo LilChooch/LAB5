@@ -116,7 +116,7 @@
 
         <TextBlock Text="Граф:"  Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom" FontSize="18"/>
 
-        <Canvas Grid.Row="6" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="7" Background="White"  x:Name="GraphCanvas">
+        <Canvas MouseLeftButtonDown="GraphCanvas_MouseLeftButtonDown" Grid.Row="6" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="7" Background="White"  x:Name="GraphCanvas">
             <Canvas.InputBindings>
                 <MouseBinding Gesture="LeftClick"  />
             </Canvas.InputBindings>

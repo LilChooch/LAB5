@@ -33,19 +33,28 @@ namespace DESIGNFOR5LABS
         // Обработчик для кнопки "Добавить вершину"
         private void SetAddNodesModeButton_Click(object sender, RoutedEventArgs e)
         {
-            _currentMode = Mode.AddNode;
+            if (_currentMode != Mode.AddNode)
+                _currentMode = Mode.AddNode;
+            else
+                _currentMode = Mode.None;
         }
 
         // Обработчик для кнопки "Добавить связи"
         private void SetAddEdgesModeButton_Click(object sender, RoutedEventArgs e)
         {
-            _currentMode = Mode.AddEdge;
+            if (_currentMode != Mode.AddEdge)
+                _currentMode = Mode.AddEdge;
+            else
+                _currentMode = Mode.None;
         }
 
         // Обработчик для кнопки "Удалить"
         private void SetDeletingModeButton_Click(object sender, RoutedEventArgs e)
         {
-            _currentMode = Mode.Delete;
+            if (_currentMode != Mode.Delete)
+                _currentMode = Mode.Delete;
+            else
+                _currentMode = Mode.None;
         }
 
         // Обработчик клика на канву
