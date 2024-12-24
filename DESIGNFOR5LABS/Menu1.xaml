@@ -1,0 +1,33 @@
+﻿<Page x:Class="DESIGNFOR5LABS.Menu1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DESIGNFOR5LABS"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="Menu1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2" Grid.Column="2" Grid.RowSpan="5" Background="#B6D7DE"/>
+        <Grid Grid.ColumnSpan="2" Grid.Column="0" Grid.RowSpan="5" Background="#B6D7DE"/>
+        <TextBlock FontSize="40" HorizontalAlignment="Center"   >Меню: </TextBlock>
+        <Button Click="Button_Click" Background="White" HorizontalAlignment="Stretch" Grid.Row="0"  Grid.Column="0" MinHeight="40" MaxHeight="50" MinWidth="34" MaxWidth="370" BorderBrush="Black" BorderThickness="3" >DFS and BFS</Button>
+        <Button Click="Button_Click_1"  Background="White"  HorizontalAlignment="Stretch"  Grid.Row="2" Grid.Column="0" MinHeight="40" MaxHeight="50" MinWidth="34" MaxWidth="370"  BorderBrush="Black" BorderThickness="3">Prima Algorithm</Button>
+        <Button Click="Button_Click_2" Background="White" HorizontalAlignment="Stretch" Grid.Row="3"  Grid.Column="0" MinHeight="40" MaxHeight="50" MinWidth="34" MaxWidth="370" BorderBrush="Black" BorderThickness="3"  >Diijkstra Algorithm</Button>
+        <Button Click="Button_Click_3"  Background="White" HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="0" MinHeight="40" MaxHeight="50" MinWidth="34" MaxWidth="370"  BorderBrush="Black" BorderThickness="3"  >Forg Fulkerson Algorithm</Button>
+
+        <Frame x:Name="MyFrame1" Grid.ColumnSpan="5" Grid.RowSpan="5" Navigated="MyFrame1_Navigated" />
+    </Grid>
+</Page>
